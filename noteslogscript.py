@@ -1,4 +1,5 @@
 import os
+import subprocess
 from datetime import datetime
 
 def combine_text_files(folder_path, output_file):
@@ -17,3 +18,5 @@ def combine_text_files(folder_path, output_file):
 folder_path = 'C:\\Users\\jacob\\OneDrive\\Desktop\\MyNotes'
 output_file = 'combined_log.txt'
 combine_text_files(folder_path, output_file)
+
+subprocess.Popen(["notepad.exe", "combined_log.txt"])
